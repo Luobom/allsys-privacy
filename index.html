@@ -9,7 +9,7 @@
             font-family: Arial, sans-serif;
             line-height: 1.6;
             color: #333;
-            max-width: 800px;
+            max-width: 900px;
             margin: 40px auto;
             padding: 0 20px;
         }
@@ -20,22 +20,27 @@
         }
         h2 {
             color: #34495e;
-            margin-top: 25px;
+            margin-top: 28px;
         }
         p {
             margin-bottom: 15px;
         }
         ul {
             margin-bottom: 15px;
+            padding-left: 20px;
         }
         li {
-            margin-bottom: 5px;
+            margin-bottom: 6px;
         }
         .footer {
             margin-top: 40px;
             padding-top: 20px;
             border-top: 1px solid #eee;
-            font-size: 0.9em;
+            font-size: 0.95em;
+        }
+        .muted {
+            color: #666;
+            font-size: 0.95em;
         }
     </style>
 </head>
@@ -43,44 +48,114 @@
 
     <header>
         <h1>Política de Privacidade – Allsys Ponto</h1>
+        <p class="muted"><strong>Última atualização:</strong> 19 de março de 2026</p>
     </header>
 
     <main>
-        <p>O aplicativo <strong>Allsys Ponto</strong> respeita a privacidade de seus usuários e está comprometido com a proteção dos dados pessoais coletados durante sua utilização.</p>
+        <p>O aplicativo <strong>Allsys Ponto</strong> respeita a privacidade de seus usuários e está comprometido com a proteção dos dados pessoais tratados durante a utilização do serviço.</p>
 
-        <h2>Coleta de informações</h2>
-        <p>O aplicativo pode coletar as seguintes informações:</p>
+        <p>Esta Política explica, de forma clara e objetiva, quais dados podem ser coletados, como são utilizados, com quem podem ser compartilhados e quais direitos o titular pode exercer em relação aos seus dados.</p>
+
+        <h2>1. Quem participa do tratamento dos dados</h2>
+        <p>No contexto de uso corporativo do <strong>Allsys Ponto</strong>, a empresa contratante do serviço geralmente atua como <strong>controladora</strong> dos dados pessoais de seus colaboradores, pois é quem define as finalidades e regras de uso do sistema no ambiente de trabalho.</p>
+        <p>A <strong>ALL Informática</strong> atua, em regra, como <strong>operadora</strong> ou prestadora de serviços de tecnologia, realizando o tratamento de dados em nome da empresa contratante, sem prejuízo das hipóteses em que possa atuar como controladora em atividades próprias, como segurança da plataforma, suporte técnico, prevenção a fraudes, cumprimento de obrigações legais e gestão da relação comercial.</p>
+
+        <h2>2. Dados que podem ser coletados</h2>
+        <p>O aplicativo pode coletar e tratar as seguintes categorias de dados:</p>
         <ul>
-            <li>Dados de autenticação (como e-mail e identificação do usuário);</li>
-            <li>Dados de uso do aplicativo;</li>
-            <li>Localização do dispositivo, utilizada exclusivamente no momento do registro de ponto, com a finalidade de validação da marcação.</li>
+            <li>Dados de autenticação e cadastro, como login, e-mail, identificadores internos do usuário, empresa, filial, função e perfil de acesso;</li>
+            <li>Dados de uso do aplicativo, como data e hora de acesso, versão do app, dispositivo, sistema operacional, identificadores técnicos, logs e eventos operacionais;</li>
+            <li>Dados de localização do dispositivo, utilizados no momento do registro de ponto para validação da marcação e prevenção a fraudes;</li>
+            <li>Dados relacionados ao registro de ponto, como horários, tipo da marcação, origem da batida e informações necessárias à auditoria do evento;</li>
+            <li>Dados de câmera e imagens capturadas quando a funcionalidade de reconhecimento facial estiver habilitada para a empresa contratante;</li>
+            <li>Dados biométricos e faciais, quando aplicável, para cadastro biométrico, autenticação de identidade e prevenção a fraude;</li>
+            <li>Dados de verificação facial por prova de vida (<em>liveness</em>), quando esse recurso estiver habilitado para a empresa contratante;</li>
+            <li>Quando exigido por recursos do sistema operacional, do dispositivo ou do SDK utilizado no fluxo de verificação facial, o aplicativo poderá acessar permissões auxiliares relacionadas à execução técnica do processo, exclusivamente para viabilizar a validação facial.</li>
         </ul>
 
-        <h2>Uso das informações</h2>
-        <p>As informações coletadas são utilizadas para:</p>
+        <h2>3. Dados biométricos, reconhecimento facial e liveness</h2>
+        <p>Algumas empresas contratantes podem habilitar recursos de <strong>reconhecimento facial</strong> e, opcionalmente, de <strong>prova de vida (liveness)</strong> para reforçar a validação da identidade do colaborador no momento da marcação de ponto.</p>
+        <p>Nesses casos, o aplicativo poderá capturar imagens faciais do usuário para:</p>
         <ul>
-            <li>Permitir o funcionamento adequado do aplicativo;</li>
-            <li>Registrar e validar marcações de ponto;</li>
-            <li>Exibir informações ao usuário e aos administradores autorizados;</li>
-            <li>Cumprir obrigações legais e operacionais.</li>
+            <li>realizar o cadastro biométrico do colaborador;</li>
+            <li>comparar a captura enviada com o perfil biométrico cadastrado;</li>
+            <li>verificar sinais de autenticidade da captura, quando o recurso de liveness estiver habilitado;</li>
+            <li>prevenir tentativas de fraude, simulação, uso indevido ou marcação por terceiros;</li>
+            <li>permitir auditoria e investigação de eventos de segurança, quando necessário.</li>
+        </ul>
+        <p>Os dados biométricos são considerados <strong>dados pessoais sensíveis</strong> e recebem tratamento reforçado de segurança e acesso restrito.</p>
+        <p>Se a empresa contratante não habilitar reconhecimento facial para determinado ambiente ou usuário, esse tratamento biométrico não será realizado naquele fluxo.</p>
+
+        <h2>4. Finalidades do tratamento</h2>
+        <p>As informações tratadas pelo <strong>Allsys Ponto</strong> são utilizadas para:</p>
+        <ul>
+            <li>permitir o funcionamento adequado do aplicativo e da plataforma;</li>
+            <li>autenticar usuários e controlar permissões de acesso;</li>
+            <li>registrar, validar e auditar marcações de ponto;</li>
+            <li>confirmar a identidade do colaborador em fluxos de batida com verificação facial;</li>
+            <li>prevenir fraudes, abusos, acessos indevidos e inconsistências operacionais;</li>
+            <li>cumprir obrigações legais, regulatórias, trabalhistas e contratuais;</li>
+            <li>viabilizar suporte técnico, manutenção, monitoramento, segurança e melhoria do serviço.</li>
         </ul>
 
-        <h2>Compartilhamento de dados</h2>
-        <p>O Allsys Ponto não compartilha dados pessoais com terceiros, exceto quando exigido por lei ou para o funcionamento técnico do serviço.</p>
+        <h2>5. Bases legais aplicáveis</h2>
+        <p>O tratamento de dados pessoais no <strong>Allsys Ponto</strong> ocorre de acordo com as hipóteses legais aplicáveis à operação, que podem incluir, conforme o caso concreto:</p>
+        <ul>
+            <li>execução de contrato e procedimentos relacionados ao contrato;</li>
+            <li>cumprimento de obrigação legal ou regulatória;</li>
+            <li>exercício regular de direitos em processo judicial, administrativo ou arbitral;</li>
+            <li>proteção do crédito, segurança, prevenção à fraude e tutela da autenticidade das marcações;</li>
+            <li>consentimento, quando essa for a base legal aplicável ao contexto específico.</li>
+        </ul>
+        <p>A definição da base legal aplicável em cada operação pode depender da relação entre a empresa contratante, o colaborador e a finalidade do tratamento.</p>
 
-        <h2>Armazenamento e segurança</h2>
-        <p>Os dados são armazenados em servidores seguros e protegidos por medidas técnicas adequadas para evitar acessos não autorizados.</p>
+        <h2>6. Compartilhamento de dados</h2>
+        <p>O <strong>Allsys Ponto</strong> não vende dados pessoais.</p>
+        <p>Os dados podem ser compartilhados, quando necessário, com:</p>
+        <ul>
+            <li>a empresa contratante, seus administradores e usuários autorizados, conforme perfil de acesso;</li>
+            <li>prestadores de serviço e operadores contratados para viabilizar a infraestrutura, hospedagem, segurança, autenticação, processamento e suporte do sistema;</li>
+            <li>provedores de tecnologia usados no fluxo de reconhecimento facial e liveness, incluindo serviços de processamento biométrico e validação antifraude;</li>
+            <li>autoridades públicas ou terceiros, quando houver obrigação legal, regulatória, judicial ou administrativa.</li>
+        </ul>
 
-        <h2>Direitos do usuário</h2>
-        <p>O usuário pode solicitar a correção ou exclusão de seus dados pessoais por meio dos canais de contato informados abaixo.</p>
+        <h2>7. Uso de provedores externos e transferência internacional</h2>
+        <p>Para viabilizar recursos técnicos do serviço, inclusive reconhecimento facial e liveness, o <strong>Allsys Ponto</strong> pode utilizar provedores de nuvem e processamento, incluindo a <strong>Amazon Web Services (AWS)</strong> e o <strong>Amazon Rekognition</strong>.</p>
+        <p>Dependendo da configuração do ambiente contratado, o tratamento poderá envolver infraestrutura localizada fora do Brasil, incluindo processamento em servidores situados no exterior. Nessas hipóteses, são adotadas medidas contratuais, técnicas e organizacionais para proteger os dados pessoais e garantir nível adequado de segurança.</p>
 
-        <h2>Alterações nesta política</h2>
-        <p>Esta política de privacidade pode ser atualizada periodicamente. Recomendamos que o usuário a revise regularmente.</p>
+        <h2>8. Retenção e exclusão de dados</h2>
+        <p>Os dados pessoais são mantidos pelo tempo necessário para cumprir as finalidades descritas nesta Política, inclusive:</p>
+        <ul>
+            <li>enquanto a conta, vínculo contratual ou acesso ao sistema estiver ativo;</li>
+            <li>pelo prazo necessário ao cumprimento de obrigações legais, regulatórias, trabalhistas, contratuais e de auditoria;</li>
+            <li>pelo prazo necessário à prevenção de fraudes, apuração de incidentes e exercício regular de direitos.</li>
+        </ul>
+        <p>No caso de dados biométricos, o prazo de retenção pode variar conforme a política da empresa contratante, a configuração do serviço e as exigências legais aplicáveis. Sempre que tecnicamente e juridicamente possível, os dados serão eliminados, anonimizados ou bloqueados ao término da necessidade do tratamento.</p>
+
+        <h2>9. Segurança das informações</h2>
+        <p>Adotamos medidas técnicas e administrativas razoáveis para proteger os dados pessoais contra acesso não autorizado, perda, destruição, alteração, divulgação indevida ou qualquer forma de tratamento inadequado ou ilícito.</p>
+        <p>Essas medidas incluem controles de acesso, segregação de perfis, autenticação, proteção de credenciais, registro de eventos, mecanismos de auditoria, uso de infraestrutura segura e revisão contínua de segurança.</p>
+
+        <h2>10. Direitos do titular</h2>
+        <p>Nos termos da legislação aplicável, o titular pode solicitar, conforme cabível:</p>
+        <ul>
+            <li>confirmação da existência de tratamento;</li>
+            <li>acesso aos dados pessoais;</li>
+            <li>correção de dados incompletos, inexatos ou desatualizados;</li>
+            <li>anonimização, bloqueio ou eliminação de dados desnecessários, excessivos ou tratados em desconformidade com a legislação;</li>
+            <li>informação sobre compartilhamento de dados;</li>
+            <li>revogação de consentimento, quando essa for a base legal aplicável;</li>
+            <li>solicitação de exclusão, observadas as hipóteses legais de retenção.</li>
+        </ul>
+        <p>Solicitações relacionadas a dados tratados no contexto da relação de trabalho poderão ser analisadas em conjunto com a empresa contratante responsável pelo respectivo ambiente.</p>
+
+        <h2>11. Alterações nesta política</h2>
+        <p>Esta Política de Privacidade pode ser atualizada periodicamente para refletir alterações legais, regulatórias, operacionais ou tecnológicas. Recomendamos que o usuário a revise regularmente.</p>
     </main>
 
     <footer class="footer">
-        <h2>Contato</h2>
-        <p>Em caso de dúvidas sobre esta Política de Privacidade, entre em contato:</p>
+        <h2>12. Contato</h2>
+        <p>Em caso de dúvidas sobre esta Política de Privacidade, solicitações relacionadas a dados pessoais ou exercício de direitos, entre em contato:</p>
         <p>
             <strong>E-mail:</strong> <a href="mailto:suporte@allinformatica.com.br">suporte@allinformatica.com.br</a><br>
             <strong>Empresa:</strong> ALL Informática
