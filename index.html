@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Política de Privacidade v2.2 - Allsys Ponto</title>
+  <title>Política de Privacidade v2.3 - Allsys Ponto</title>
   <style>
     body {
       color: #1f2933;
@@ -34,8 +34,8 @@
 </head>
 <body>
   <h1>Política de Privacidade - Allsys Ponto</h1>
-  <p><strong>Versão:</strong> 2.2</p>
-  <p><strong>Última atualização:</strong> 12 de junho de 2026</p>
+  <p><strong>Versão:</strong> 2.3</p>
+  <p><strong>Última atualização:</strong> 30 de outubro de 2026</p>
   <p><strong>URL canônica:</strong> <a href="https://privacidade.allsysponto.com.br/">https://privacidade.allsysponto.com.br/</a></p>
 
   <h2>1. Sobre esta política</h2>
@@ -147,6 +147,21 @@
       </tr>
     </tbody>
   </table>
+
+  <h3>Reconhecimento facial online e sem internet</h3>
+  <p>Quando a empresa habilita a verificação facial, o cadastro online utiliza três selfies enviadas por conexão segura à plataforma e processadas com os prestadores de reconhecimento facial indicados nesta política, incluindo Amazon Rekognition. Esse cadastro continua sendo utilizado para a verificação online.</p>
+  <p>Quando o armazenamento de fotos está configurado, a primeira selfie do cadastro também pode ser mantida como foto de perfil do colaborador em armazenamento de objetos da AWS (Amazon S3), vinculada ao cadastro e utilizada para identificação visual nas funcionalidades autorizadas da plataforma. Essa foto não é descartada apenas porque a requisição de cadastro terminou. Sua retenção e eliminação seguem a finalidade do cadastro, as obrigações aplicáveis e o atendimento das solicitações de privacidade; esta atualização não estabelece um prazo fixo de exclusão que o produto ainda não implemente.</p>
+  <p>Quando a marcação facial sem internet também está habilitada, o app solicita uma foto adicional para preparar um modelo biométrico no próprio aparelho. Esse modelo é uma representação numérica de características faciais usada para comparação; não é uma fotografia e continua sendo dado pessoal sensível. A foto adicional e o modelo resultante não são enviados ao servidor no fluxo offline. As imagens temporárias de captura são utilizadas somente durante o processamento e submetidas à limpeza ao encerrar o fluxo. O modelo é guardado no armazenamento protegido do sistema, vinculado ao usuário, ao aparelho e à revisão do cadastro.</p>
+  <p>Na marcação sem internet, a comparação do rosto acontece no aparelho. Quando a marcação é sincronizada, o app envia o resultado da validação e os identificadores técnicos necessários para verificar a autorização, a revisão do cadastro e a versão do motor, juntamente com os dados da marcação. Esse envio não contém o modelo biométrico local, a fotografia da comparação offline ou a pontuação de similaridade.</p>
+  <p>O aplicativo solicita a remoção do modelo local no encerramento da sessão, na troca de usuário ou de escopo de acesso, na substituição do cadastro e quando identifica que o modelo não corresponde mais ao cadastro ou à configuração autorizada. A atualização recebida do servidor é necessária para que um aparelho conheça uma alteração remota: enquanto estiver sem rede, ela pode não ser conhecida imediatamente. O término da validade da autorização impede novas marcações offline, mas não representa, por si só, exclusão física do modelo.</p>
+  <p>No Android, os dados locais do app são removidos na desinstalação e o modelo e a fila de marcações são excluídos das regras de backup e transferência automática configuradas pelo aplicativo. No iOS, o Keychain pode preservar dados após a desinstalação; portanto, desinstalar não garante a eliminação imediata do modelo. Ao reconhecer uma nova instalação ou um vínculo inválido, o app solicita o descarte do modelo anterior. Se houver indisponibilidade do armazenamento ou falha na exclusão, o reconhecimento não deve ser admitido com esse dado até que as verificações de segurança sejam concluídas. Solicitações de eliminação também podem ser encaminhadas ao canal de privacidade desta política.</p>
+  <h3>Marcações e fila local sem internet</h3>
+  <p>Para registrar sem conexão, o app mantém no aparelho uma fila protegida de marcações, com horário de captura, tipo da marcação, localização e precisão, identificadores de usuário/aparelho e evidências técnicas de autorização e validação. A localização é utilizada para validar a marcação; a funcionalidade não tem por finalidade acompanhar continuamente o deslocamento do colaborador. Os dados são enviados por conexão segura quando há rede e uma sessão/autorização válida. Uma recusa do servidor pode gerar uma pendência para análise, em vez de uma marcação aceita.</p>
+  <p>Os detalhes locais de marcações sincronizadas, descartadas ou resolvidas e dos respectivos registros locais de resolução ficam sujeitos à limpeza quando ultrapassam 90 dias desde a atualização/resolução pertinente. Essa limpeza ocorre durante a execução bem-sucedida das rotinas de inicialização e sincronização; não é uma garantia de exclusão em um instante fixo se o aplicativo não for utilizado. Marcações ainda pendentes, recusas sem resolução e relatos de incidente ainda não confirmados são preservados para sincronização ou tratamento, sem prazo automático máximo definido nessa rotina. Esse prazo local não altera a retenção dos registros de ponto e auditoria mantidos no servidor conforme obrigações legais e contratuais.</p>
+  <p>A fila local não é um mecanismo de backup. No Android ela está excluída do backup e da transferência automática do app. Desinstalar, apagar dados ou trocar o aparelho antes de sincronizar pode impedir a recuperação das marcações locais; sincronize e confira as pendências antes dessas ações.</p>
+  <p>No iOS, a fila é armazenada em um banco cifrado na área de documentos do app, que pode integrar backups do aparelho/iCloud conforme as configurações do sistema. A chave desse banco, as credenciais de autorização offline e o identificador técnico do aparelho usam a proteção padrão do Keychain, que não restringe esses itens ao aparelho original; em modalidades de backup/restauração compatíveis, eles podem migrar para outro iPhone. Isso é diferente do modelo facial offline, configurado para não migrar para outro aparelho. Restaurar um backup não garante que marcações ou autorizações sejam admitidas: continuam sujeitos às verificações de sessão, vínculo, prazo e integridade temporal da plataforma. O app não promete que toda a fila e todas as suas credenciais estejam excluídas do backup no iOS.</p>
+  <h3>Prestadores, identificadores e rastreamento</h3>
+  <p>O app utiliza identificadores de conta e um identificador técnico da instalação/aparelho para vincular autorizações, proteger a sessão, prevenir fraude e correlacionar marcações e incidentes. Prestadores de infraestrutura e processamento, como a AWS, tratam dados para a prestação desses serviços conforme as instruções e condições contratuais aplicáveis. Esses dados não são utilizados pelo Allsys Ponto para publicidade comportamental, rastreamento publicitário entre aplicativos ou comercialização a corretores de dados.</p>
 
   <h2>5. Permissões mobile e dados não coletados</h2>
   <p>
@@ -463,6 +478,7 @@
         <td>12 de junho de 2026</td>
         <td>Inclui verificação de e-mail por OTP, MFA por e-mail para administradores, backup codes, supressão operacional de e-mail e retenções específicas desses fluxos.</td>
       </tr>
+    <tr><td>2.3</td><td>30 de outubro de 2026</td><td>Detalha foto de perfil, modelo facial local, fila offline, retenção, backup por plataforma e identificadores técnicos, preservando as demais disposições.</td></tr>
     </tbody>
   </table>
 </body>
